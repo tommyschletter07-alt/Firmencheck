@@ -1,0 +1,5 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QR – FirmenCheck</title><link rel="stylesheet" href="/styles.css"></head>
+<body><div class="shell"><div class="topbar"><a class="brand" href="/"><span class="logo">FC</span>FirmenCheck</a></div>
+<div class="card qrbox"><h1>QR-Code zum Bewerten</h1><img id="qr"><div id="url" class="codeurl"></div><p class="note">Nach dem Upload einfach diese Seite öffnen und den QR-Code als Screenshot speichern.</p></div></div>
+<script>const u=location.origin+"/bewerten.html";document.getElementById("url").textContent=u;document.getElementById("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=600x600&margin=20&data="+encodeURIComponent(u)</script>
+</body></html>
